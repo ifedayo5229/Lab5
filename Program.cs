@@ -15,35 +15,33 @@ namespace Lab5
         }
     }
 
-    public abstract class Bank
-    {
-       public abstract void  getBalance();
-    }
-
     public class BankA :Bank
     {
+        public decimal bal  = 100.00M;
         public override void getBalance()
         {
           
-        Console.WriteLine("your  firstbank balance is $100");
+        Console.WriteLine("your  firstbank balance is " +"$"+ bal);
         }
 
 
     }
     public class BankB :Bank
-    {
+    { 
+        public decimal bal  = 150.00M;
         public override void getBalance()
         {
-           Console.WriteLine("your gtbank balance is $150");
+           Console.WriteLine("your gtbank balance is " +"$"+ bal);
         }
 
         
     }
     public class BankC: Bank
     {
+         public decimal bal  = 200.00M;
         public override void getBalance()
         {
-           Console.WriteLine("your unionbank balance is $200");
+           Console.WriteLine("your unionbank balance is "+"$" + bal);
         }
 
         
